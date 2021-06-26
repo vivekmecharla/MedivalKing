@@ -65,7 +65,7 @@ Militia#10;Spearmen#10;FootArcher#1000;LightCavalry#120;CavalryArcher#100
         List<Platoon> platoons = new ArrayList<>();
         for (int i = 0; i < soldierStringArray.length; i++) {
             String[] data = soldierStringArray[i].split("#");
-            platoons.add(new Platoon(data[0], Integer.parseInt(data[1]), i));
+            platoons.add(new Platoon(data[0], Integer.parseInt(data[1])));
         }
         return platoons;
     }
