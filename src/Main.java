@@ -40,7 +40,7 @@ Militia#10;Spearmen#10;FootArcher#1000;LightCavalry#120;CavalryArcher#100
         int count = 0;
         for (int i = 0; i < 5; i++) {
             if ((ownListOfPlatoons.get(i).compareTo(opponentListOfPlatoons.get(i)) > 0)
-                    && (opponentListOfPlatoons.get(i).compareTo(ownListOfPlatoons.get(i)) <= 0)) {
+                    && (opponentListOfPlatoons.get(i).compareTo(ownListOfPlatoons.get(i)) < 0)) {
                 count++;
             }
         }
